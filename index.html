@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/18d19bb599.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <nav>
+      <button id="user"><i class="fas fa-lg fa-user-circle"></i></button>
+      <img id="logo" src="src/logo.svg"></img>
+      <button id="bars"><i class="fas fa-lg fa-bars"></i></button>
+    </nav>
+    <div id="container">
+      <canvas id="vis"></canvas>
+      <div id="pathTracker">
+        <div class="node"></div>
+        <div class="node"></div>
+        <div class="node node-selected"></div>
+      </div>
+      <!--Node Library-->
+      <div id="nodeLibrary" class="sidebar menuOpen">
+        Hi There how u bab
+      </div>
+      <!--Add Node-->
+      <div id="addMenu" class="sidebar menuOpen">
+        <form id="addResourceForm">
+          <h1>Add Resource</h1><i id="closeX" class="fas fa-times"></i><br>
+          <label for="title">Title</label><br>
+          <input name="title" type="text" placeholder="title..." class="barType"></input> <br>
+          
+          <label for="host">Host</label><br>
+          <input name="host" type="text" placeholder="host..." class="barType"></input> <br>
+         
+          <label for="title">Tag(s) (comma separated)</label><br>
+          <input type="text" placeholder="tag(s)..." class="barType"></input> <br>
+          
+          <label for="title">Tool(s)</label><br>
+          <input type="text" placeholder="tool(s)..." class="barType"></input> <br>
+         
+          <label for="title">Topic</label><br> 
+          <input type="text" placeholder="topic..." class="barType"></input> <br>
+         
+          <label for="title">Category</label><br>
+          <input list="categories" placeholder="category..." class="barType"></input> <br>
+          <datalist id="categories">
+              <option value="Math"> </option>
+              <option value="Science"> </option>
+              <option value="Art"></option>
+              <option value="Manufacturing"> </option>
+          </datalist>
+
+          <button id="submitResource" class="barItem" ><i class="fas fa-sign-in-alt"></i><span>Submit&nbsp;Resource</span></button>
+        </form>
+      </div>
+  
+      <div id="barMenu" class="sidebar">
+          <button id="addResource" class="barItem" ><i class="fas fa-plus"></i><span>Add&nbsp;Resource</span></button>
+          <button id="buildingPermits" class="barItem" ><i class="fas fa-hard-hat"></i>Building&nbsp;Permits</button>
+          <button id="createPath" class="barItem" ><i class="fas fa-directions"></i>Create&nbsp;Path</button>
+          <button id="categories" class="barItem" ><i class="fas fa-layer-group"></i>Categories</button>
+          <button id="categories" class="barItem" ><i class="fas fa-hammer"></i>Projects</button>
+          <button id="settings" class="barItem" ><i class="fas fa-cog"></i>Settings</button>
+          <button id="reportABug" class="barItem" ><i class="fas fa-bug"></i>Report&nbsp;a&nbsp;Bug</button>
+          <div id="menuFooter" class="barItem" > &copy;&nbsp;<a href="https://www.alexfiel.com" target="_blank"> Alex Fiel </a>&nbsp;2020 </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
